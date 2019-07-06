@@ -7,9 +7,12 @@ class App extends Component{
   render(){
     return(
       <div className="catch-of-the-day">
-        <Header/>
-        <Inventory/>
-        <Order/>
+        <div className="menu">
+          <Header tagline="Fresh SeaFood Market" />
+          <Header tagline="Jr is cool!" />
+          <Order/>
+          <Inventory/>
+        </div>
       </div>
     )
   }

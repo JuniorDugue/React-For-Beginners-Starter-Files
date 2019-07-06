@@ -5,10 +5,15 @@ class Header extends Component{
     return(
       <div>
       <header className="top">
-        <h1>Catch of the Day</h1>
+        <h1>Catch 
+          <span className="ofThe">
+            <span className="of">of</span>
+            <span className="the">the</span>
+          </span>
+        Day</h1>
       </header>
       <h3 className="tagline">
-        <span>Fresh Daily</span>
+        <span>{this.props.tagline}</span>
       </h3>
       </div>
     )
